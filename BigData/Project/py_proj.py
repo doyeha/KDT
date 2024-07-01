@@ -26,11 +26,19 @@
 
 """
 import random
-char = input("닉네임을 입력해주세요.")
-for i in range(20):
-    rand_num = random.randint
+# char = input("닉네임을 입력해주세요.")
+# for i in range(1,7):
+#     rand_num = random.randint
+
+# 1~6 랜덤 
+Dice = random.randint(1,6)
+
+print(Dice)
 
 
 
-print(rand_num)
 
+
+# 글자체(text font) 지정하기
+myFont = pygame.font.SysFont(None, 50) #(글자체, 글자크기) None=기본글자체
+myText = myFont.render("Hello World " + str(x_pos), True, (0,0,255)) #(Text,anti-alias, color)

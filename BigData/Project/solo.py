@@ -1,0 +1,122 @@
+import pygame
+import random
+
+"""
+https://wondangcom.tistory.com/2597
+"""
+
+pygame.init()
+screen = pygame.display.set_mode((500,800))
+pygame.display.set_caption("pygame test")
+#프레임 매니저 초기화하기
+clock = pygame.time.Clock()
+#프레임 레이트 설정하기
+clock.tick(60)
+#배경색상 설정하기
+screen.fill((255,255,255))
+background = pygame.display.set_mode((480,360))
+
+#화면 업데이트하기
+pygame.display.update()
+myFont = pygame.font.SysFont(None, 50) #(글자체, 글자크기) None=기본글자체
+
+while True:
+    #이벤트 확인하기 
+    for event in pygame.event.get():
+        #닫기 버튼을 눌렀는지
+
+        if event.type == pygame.QUIT:
+            #게임 끝내기
+            pygame.quit()
+            sys.exit()
+
+
+    #화면 업데이트하기
+    pygame.display.update()
+
+
+
+    myText = myFont.render("당신은 죽었습니다.", True, (0,0,0)) #(Text,anti-alias, color)
+    background.blit(myText, (100,100)) #(글자변수, 위치)
+# 3초 뒤 다음 텍스트 넘어가기
+
+    #프레임 레이트 설정하기
+    clock.tick(60)
+
+
+
+
+""" 3
+
+선택지 주사위. 1~6 사망 원인 랜덤
+if 주사위 1. 범죄자 
+ 도망쳐! 잡히면 사망
+ 선택지 1 2 3 
+    1. 넌센스 퀴즈풀어야함 
+    2. 유령엔딩 
+    3. 스스로 지옥문 평생 노역  (지옥문 사진, Bad Ending 01)
+
+주사위 2~3. 우연한 사고 (약간의 측은, 일반 엔딩)
+  코코 : 저런 사고로 죽으셧군요. 축하드립니다! 당신은 저희 환생써비스(베타.. 소곤)에 응모하실 자격이 충분하시군요.
+   어쩌고 저쩌고 암튼 환생 ㄱ!
+    선택 1.
+        싫다. -> 코코 설득 -> 다시 선택지 -> 응 그래도 보낼거야! -> ??? -> 선택권이 없어 랜덤으로 환생 (Normal Ending)
+    선택 2.
+        좋아. -> 희망 세계라도 있으신가요.
+        
+         1. 무협
+            주사위
+            1~2. 엄청 쎈 놈
+            3~4. 평범한 상인
+            5~6. 거지
+        선택지 2. 로맨스
+            주사위
+            1~2. 성공적인 주인공
+            3~4. 조연
+            5~6. 이름 없는 엑스트라로 그저 그렇게 살아갑니다...
+        선택지 3. 아포칼립스
+            주사위
+            1. 좀비가 되었습니다.
+            2. 전쟁중 
+            3. 살아남은 영웅
+            4. 멸망 후 혼자 남은 생존자
+            5. 아포칼립스를 일으킨 원인, 모두의 적대감을 얻습니다.
+            6. 인류의 마지막 희망.
+
+
+주사위 4. 과로사 (대사 조금 더 따뜻)
+
+
+주사위 ~6. 억울한 죽음 (대사 조금 더 따뜻)
+ 
+
+
+
+
+"""
+ 
+"""
+
+
+
+https://wondangcom.tistory.com/2597?pidx=1
+pygame.QUIT 윈도우 x버튼, 창닫기 버튼
+
+pygame.ACTIVEEVENT
+ gain 0 마우스 화면 들어옴
+ gain 1 마우 화면 밖
+
+ state 1 창이 활성화
+ satae 2 창 비활성화
+ state 6 비활성화된 다시 활성화
+
+ pygame.KEYDOWN 키가 눌렸을때.
+ pygame.KEYUP 키가 올라갔을때
+
+ pygame.MOUSEMOTION 마우스 움직임
+ pygame.MOUSEBUTTONUP 뗄때
+ pygame.MOUSEBUTTONDOWN 눌렀을때
+
+
+
+"""
