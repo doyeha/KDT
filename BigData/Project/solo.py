@@ -8,22 +8,20 @@ import sys
 https://wondangcom.tistory.com/2597
 """
 
-pygame.init()
-screen = pygame.display.set_mode((1280,720))
-pygame.display.set_caption("pygame test")
+pygame.init()       # 모듈 초기화
+screen = pygame.display.set_mode((1280,720))        # 화면 생성, 크기
+pygame.display.set_caption("pygame test")           # 게임 창 제목
+background = pygame.display.set_mode((1280,720))    # 배경 크기
+screen.fill((0,0,0))                                 #배경색상 설정하기
+clock = pygame.time.Clock()         # 프레임 속도 제어를 위한 Clock 객체를 생성합니다.
 
-#프레임 매니저 초기화하기
-clock = pygame.time.Clock()
 
-#프레임 레이트 설정하기
-clock.tick(60)
+clock.tick(60)      #프레임 레이트 설정하기
 
-#배경색상, 크기 설정하기
-screen.fill((0,0,0))
-background = pygame.display.set_mode((1280,720))
 
-#화면 업데이트하기
-pygame.display.update()
+
+
+pygame.display.update()     #화면 업데이트하기
 
 #이미지 경로
 # pygame.image.load('')
@@ -42,6 +40,20 @@ clock = pygame.time.Clock()
 # image_bg = pygame.image.load('./image/stadium.png')
 myFont = pygame.font.SysFont("malgungothic", 50) #(글자체, 글자크기) None=기본글자체
 
+# 이미지 정리
+def clear_screen():
+    screen.fill((0, 0, 0))
+
+
+
+# 게임 루프
+running = True
+current_image = 0
+frame_rate = 1 / 0.3  # 초당 프레임 수 (1초 간격)
+last_frame_time = time.time()
+
+
+
 
 
 
@@ -58,16 +70,16 @@ while True:
     #화면 업데이트하기
     pygame.display.update()
 
-    
-    for i in range(0,len(image_giftest)):
-        background.blit(image_giftest[i],(500+i*5,100))
-        background.blit()
-        """
-        start = time.time()
-        math.factorial(200000)
-        end = time.time()
-        print("1회 순환")
-        """
+    current_time = time.time()
+    if current_time - last_frame_time >= 1 / frame_rate:
+        clear_screen()  # 화면 지우기
+        screen.blit(image_giftest[current_image], (500, 200))  # 이미지 출력
+        pygame.display.flip()  # 화면 업데이트
+
+        # 다음 이미지로 넘어가기
+        current_image = (current_image + 1) % len(image_giftest)
+        last_frame_time = current_time
+
 
 
     background.blit(image_textbox, (0,0))
