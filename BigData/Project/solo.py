@@ -1,30 +1,54 @@
 import pygame
 import random
-
+import math
+import time
+import datetime
+import sys
 """
 https://wondangcom.tistory.com/2597
 """
 
 pygame.init()
-screen = pygame.display.set_mode((500,800))
+screen = pygame.display.set_mode((1280,720))
 pygame.display.set_caption("pygame test")
+
 #프레임 매니저 초기화하기
 clock = pygame.time.Clock()
+
 #프레임 레이트 설정하기
 clock.tick(60)
-#배경색상 설정하기
-screen.fill((255,255,255))
-background = pygame.display.set_mode((480,360))
+
+#배경색상, 크기 설정하기
+screen.fill((0,0,0))
+background = pygame.display.set_mode((1280,720))
 
 #화면 업데이트하기
 pygame.display.update()
-myFont = pygame.font.SysFont(None, 50) #(글자체, 글자크기) None=기본글자체
+
+#이미지 경로
+# pygame.image.load('')
+image_posX = 500
+image_posY = 100
+
+image_textbox = pygame.image.load('C:\\Git\\KDT\\BigData\\Project\\solo_image\\Textbox.png')
+
+image_giftest = [pygame.image.load('C:\Git\KDT\BigData\Project\solo_image\iloveimg-converted\gif_test-0000.jpg'),
+                 pygame.image.load('C:\Git\KDT\BigData\Project\solo_image\iloveimg-converted\gif_test-0001.jpg'),
+                 pygame.image.load('C:\Git\KDT\BigData\Project\solo_image\iloveimg-converted\gif_test-0002.jpg'),
+                 pygame.image.load('C:\Git\KDT\BigData\Project\solo_image\iloveimg-converted\gif_test-0002.jpg')]
+
+clock = pygame.time.Clock()
+
+# image_bg = pygame.image.load('./image/stadium.png')
+myFont = pygame.font.SysFont("malgungothic", 50) #(글자체, 글자크기) None=기본글자체
+
+
+
 
 while True:
     #이벤트 확인하기 
     for event in pygame.event.get():
         #닫기 버튼을 눌렀는지
-
         if event.type == pygame.QUIT:
             #게임 끝내기
             pygame.quit()
@@ -34,15 +58,35 @@ while True:
     #화면 업데이트하기
     pygame.display.update()
 
+    
+    for i in range(0,len(image_giftest)):
+        background.blit(image_giftest[i],(500+i*5,100))
+        background.blit()
+        """
+        start = time.time()
+        math.factorial(200000)
+        end = time.time()
+        print("1회 순환")
+        """
 
 
-    myText = myFont.render("당신은 죽었습니다.", True, (0,0,0)) #(Text,anti-alias, color)
-    background.blit(myText, (100,100)) #(글자변수, 위치)
+    background.blit(image_textbox, (0,0))
+    myText = myFont.render("테스트 테스트.", True, (255,255,255)) #(Text,anti-alias, color)
+    background.blit(myText, (100,10)) #(글자변수, 위치(「 기준 가로,세로))
 # 3초 뒤 다음 텍스트 넘어가기
 
     #프레임 레이트 설정하기
-    clock.tick(60)
 
+
+
+
+"""
+1. 주사위 클래스 (1~4 or 1~6)
+2. 대사 박스, 출력 클래스
+3. @Override 대사 - 선택지 박스 (2~3개 해야함.)
+
+
+"""
 
 
 
