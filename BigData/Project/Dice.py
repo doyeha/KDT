@@ -20,10 +20,11 @@ myFont = pygame.font.SysFont("malgungothic", 50) #(글자체, 글자크기) None
 
 
 # 애니메이션 관련 설정
-frames = []
-current_frame = 0
-frame_duration = 50  # 각 프레임의 지속 시간 (밀리초 단위)
-last_update = pygame.time.get_ticks()
+# def loadImage()
+# current_frame = 0
+# frame_duration = 50   # 각 프레임의 지속 시간 (밀리초 단위)
+# last_update = pygame.time.get_ticks()
+# screen = pygame.display.set_mode((800, 600))
 
 def loadImageFromPath(imgPath):
     if str(imgPath).lower().endswith('.gif'):
