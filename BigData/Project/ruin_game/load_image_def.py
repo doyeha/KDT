@@ -18,7 +18,6 @@ import time
 #         print(e)
 #         return None
 
-def loadImage(current_frame, frame_duration,screen)
 current_frame = 0
 frame_duration = 50   # 각 프레임의 지속 시간 (밀리초 단위)
 last_update = pygame.time.get_ticks()

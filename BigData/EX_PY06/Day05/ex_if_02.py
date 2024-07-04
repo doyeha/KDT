@@ -36,8 +36,7 @@ print(num1-num2) if dus =="-" else None
 print(num1*num2) if dus =="*" else None
 print(num1/num2) if dus =="/" else None
 
-
-
-
-
 print(num1+dus+num2)
+
+
+

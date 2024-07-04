@@ -201,6 +201,7 @@ for i in range(5): # 세로
             print("*",end="")
     print()
 
+# 대각선 별 찍기 01
 for i in range(5): # 세로
     for j in range(5): # 가로
         if j == i:
@@ -208,6 +209,10 @@ for i in range(5): # 세로
         else:
             print(" ", end=" ")
     print()
+# 대각선 별 찍기 02
+for v in range(5): # 세로
+    for h in range(v+1): # 가로
+        print("*" if h ==v else " ", end="\n" if h==v else "")
 
 ## 217P - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - -
 """ 19.5 퀴즈
@@ -270,6 +275,33 @@ while h<hei:
         print() # 가로 출력 후 엔터      
         s = s + 1 
         h += 1
+
+## 재정리
+layer = int(input())
+h = 0 # 반복 제어 변수
+s = 0 # 별 조절 변수
+while h<layer:
+    for i in range(1,layer+1): # 반복 - 층
+        for j in range(1,(layer*2)): # 가로 | layer 에 비례해 가로 생성.
+            ## 층에 따라 앞 부분 공백 출력
+            if j <= int(layer-i): #5 공백 공식 i-1 
+                print(" ", end="")
+            else: # 별 들어올 자리부터 입력.
+                print("*"*(i+s),end="") # 층에 따른 별 갯수 조절
+                break
+        print() # 가로 출력 후 엔터      
+        s = s + 1 
+        h += 1
+
+"""         -> 공백                          별
+    *       -> 4 : x-1(층 넘어가는 h로.) | 1  j
+   ***      -> 3 : x-2                  | 3  j+2
+  *****     -> 0 : x-3                  | 5 
+ *******    -> 1                        | 7 
+*********   -> -                        | 9  
+
+맨 아래 층 => y = (Xx2)-1
+""" 
 
 
 ## 220P - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - -

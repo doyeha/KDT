@@ -11,6 +11,14 @@ for i in range(20,100):
     else:
         print(f'{dan} * {g} = {dan*g :0>2}')
 
+for i in range(20,100):
+    dan = i//10 # 몫 2~10 
+    g = i%10 # 나머지,0
+    if g==0:
+        print(f'{str(dan)+"단" :=^10}')
+    else:
+        print(f'{dan} * {g} = {dan*g :0>2}')
+
 # for dan in range(2,10):
 #     for i in range(1,10):
 #         print(f"{dan} * {i} = {dan * i:0>2}", end= "  ")

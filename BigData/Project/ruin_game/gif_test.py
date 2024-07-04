@@ -43,7 +43,6 @@ while True:
             #게임 끝내기
             pygame.quit()
             sys.exit()
-            
     gif = cv2.VideoCapture("C:\Git\KDT\BigData\Project\solo_image\gif_test.gif")
     ret, frame = gif.read()  # ret=True if it finds a frame else False.
     while ret:
