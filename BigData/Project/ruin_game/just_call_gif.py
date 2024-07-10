@@ -9,7 +9,7 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Pygame GIF Example')
 
 # GIF 파일 불러오기
-gif = Image.open('C:\Git\KDT\BigData\Project\solo_image\Dice.gif')
+gif = Image.open('C:\Git\KDT\BigData\Project\ruin_game\solo_image\Dice.gif')
 frames = []
 for frame in range(gif.n_frames):
     gif.seek(frame)

@@ -68,6 +68,7 @@
 
     ex. print('num1 + num2 = %d' %(num1+num2))
 
+
     
 
 ## file _ Day02 _ print03
@@ -95,10 +96,18 @@
   # list
   # tuple
   # Dictionary (딕셔너리)
-    정의 : 
-    형식 : a = {"Key1":"Values", "Key2" : "Values2"} 
+    * 정의 : 데이터의 의미를 함께 저장하는 자료형
+    * 형식 : a = {"Key1":"Values", "Key2" : "Values2"} 
       -> key와 value에 데이터 타입은 상관없다.
-      -> Value에 리스트. 튜플 다 가능.
+      -> Value에 리스트. 튜플 다 가능. 단, Key값은 중복이 불가능하다. 중복된다면 키 사용 시  하나만 사용됨.
+    * 메서드
+      1. key = 
+
+
+      
+
+
+
   # Set
     중복, 순서가 없는 데이터 집합
     ## 덧셈연산 ==> 메서드 사용, 합집합
