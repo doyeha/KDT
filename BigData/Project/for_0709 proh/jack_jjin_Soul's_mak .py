@@ -74,17 +74,16 @@ def dealer_ger_card() :
                 card = pick_card()
                 if check_card(card) == True:
                     dealer_card.append(card)
-                if rand.randint(1,4) in [1]:    # 70프로 확률로 더 뽑고 나서, 25프로 확률로 그만 뽑기
+                if rand.randint(1,2) in [1]:    # 70프로 확률로 더 뽑고 나서, 50프로 확률로 그만 뽑기
                     i=1
-
-        elif (play_sum(player_card) - deal_sum(dealer_card)) > 0 : # 플레이어가 딜러의 합산보다 3 ~ 0 ? 20프로 확률로 카드 뽑기
+        if (play_sum(player_card) - deal_sum(dealer_card)) > 0 : # 플레이어가 딜러의 합산보다 3 ~ 0 ? 20프로 확률로 카드 뽑기
             do = rand.randint(1,10)
             if do in [1,2]: 
                 card = pick_card()
                 if check_card(card) == True:
                     dealer_card.append(card)
-                if rand.randint(1,3) in [1]:    # 20프로 확률로 더 뽑고 나서, 30프로 확률로 그만 뽑기
-                    i=1                         # while 멈추는 용.
+                if rand.randint(1,2) in [1]:    # 20프로 확률로 더 뽑고, 50프로 확률로 그만 뽑기 
+                    i=1
         else:
             i = 1   # while문 막는 용도 // 플레이어와 딜러 간의 숫자 합 차이가 4이상 or 1~3도 아니라면 그만 뽑기
 
