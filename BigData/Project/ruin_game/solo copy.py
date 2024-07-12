@@ -67,18 +67,45 @@ while True:
             sys.exit()
     #화면 업데이트하기
     pygame.display.update()
-
     current_time = time.time()
-    if current_time - last_frame_time >= 1 / frame_rate:
-        clear_screen()  # 화면 지우기
-        screen.blit(image_giftest[current_image], (500, 200))  # 이미지 출력
-        pygame.display.flip()  # 화면 업데이트
 
-        # 다음 이미지로 넘어가기
-        current_image = (current_image + 1) % len(image_giftest)
-        last_frame_time = current_time
+    for event in pygame.event.get():
+        clear_screen()
+
+        if event.type == pygame.MOUSEBUTTONDOWN: # 클릭 이벤트
+            myText = myFont.render("테스트 테스트.", True, (255,255,255)) #(Text,anti-alias, color)
+            background.blit(myText, (100,10)) #(글자변수, 위치(「 기준 가로,세로))
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                clear_screen()
+                break
+
+        if event.type == pygame.MOUSEBUTTONDOWN: # 클릭 이벤트
+            if current_time - last_frame_time >= 1 / frame_rate:
+                clear_screen()  # 화면 지우기
+                screen.blit(image_giftest[current_image], (500, 200))  # 이미지 출력
+                pygame.display.flip()  # 화면 업데이트
+
+                # 다음 이미지로 넘어가기
+                current_image = (current_image + 1) % len(image_giftest)
+                last_frame_time = current_time
+
+        if event.type == pygame.MOUSEBUTTONDOWN: # 클릭 이벤트
+            myText = myFont.render("테스트 테스트.", True, (255,255,255)) #(Text,anti-alias, color)
+            background.blit(myText, (100,10)) #(글자변수, 위치(「 기준 가로,세로))
+            background.blit(image_textbox, (0,0))
+            for event in pygame.event.get():        #
+                if event.type == pygame.MOUSEBUTTONDOWN: # 클릭 이벤트
+                    clear_screen()
+                    break
+                myText = myFont.render("2차", True, (255,255,255)) #(Text,anti-alias, color)
+                background.blit(myText, (200,50)) #(글자변수, 위치(「 기준 가로,세로))
 
 
+
+
+
+
+    
 
 
     myText = myFont.render("테스트 테스트.", True, (255,255,255)) #(Text,anti-alias, color)
@@ -88,8 +115,8 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN: # 클릭 이벤트
             clear_screen()
             break
-    myText = myFont.render("2차", True, (255,255,255)) #(Text,anti-alias, color)
-    background.blit(myText, (200,50)) #(글자변수, 위치(「 기준 가로,세로))
+        myText = myFont.render("2차", True, (255,255,255)) #(Text,anti-alias, color)
+        background.blit(myText, (200,50)) #(글자변수, 위치(「 기준 가로,세로))
 
 # 3초 뒤 다음 텍스트 넘어가기
 
