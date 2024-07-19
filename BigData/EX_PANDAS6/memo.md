@@ -76,4 +76,8 @@ Series / DataFrame  ==> 구성 : index + values / index+columns + values
                 변수명.loc[행인덱스][열인덱스] 
                 변수명.iloc[행인덱스][열인덱스]
 
-                  
+
+
+MutiIndex
+   
+   xs
