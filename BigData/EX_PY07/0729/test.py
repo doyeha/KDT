@@ -34,10 +34,12 @@ city1 = sorted(list(city.keys()))
 
 # print(city['Beijing'].items[2])
 
-sorted_pop = sorted(city.items(), key=lambda item : int(item[1][2].replace(',','')), reverse=True)
-idx = 1
-# print(sorted_pop)
-for i in sorted_pop:
-        # print(f'[{idx}] {i[1][2]}')
-        print(f'[{idx}]', '{:<20}'.format(i[0]), ': {:<}'.format(i[1][2])) #f'{i[1][2]}' ) #
-        idx+=1
+# sorted_pop = sorted(city.items(), key=lambda item : int(item[1][2].replace(',','')), reverse=True)
+# idx = 1
+# # print(sorted_pop)
+# for i in sorted_pop:
+#         # print(f'[{idx}] {i[1][2]}')
+#         print(f'[{idx}]', '{:<20}'.format(i[0]), ': {:<}'.format(i[1][2])) #f'{i[1][2]}' ) #
+#         idx+=1
+
+print(city.items[2])
