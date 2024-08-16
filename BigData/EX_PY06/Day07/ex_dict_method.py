@@ -17,12 +17,11 @@ person = {"name":"홍길동", "age": 10}
 
 # [메서드 - 키와 값 추가 메서드]
 person["gender"] = "남"
-print(person)
 
 # [메서드 - 수정 및 추가 업데이트 메서드 update((k=v)]
 # 수정 / 업데이트
 person["gender"] = "여"
-print(person)
+
 person.update(gender = "어린이")
 print(person)
 

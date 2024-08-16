@@ -73,3 +73,5 @@ def check_data(data, count, sep=" "):
 print(check_data("+ 10 3",3))
 print(check_data("+ 10 ",3))
 print(check_data("+,10,3",3,','))
+
+## 29 ~30 31장은 안함
