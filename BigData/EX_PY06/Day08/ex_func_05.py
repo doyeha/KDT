@@ -28,4 +28,6 @@ register()
 # ------------------------------------------------------------------
 def register2(id,pw,email, **params):
     print(type(params))
-register2("Hong", "H12345", "h@naver.com", "F")
+register2("Hong", "H12345", "h@naver.com", gender="F")
+
+# 3개는 이미 저장할 변수가 있지만 "F"는 없으므로 앞에다가 적어줘야한다.

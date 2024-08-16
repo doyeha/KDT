@@ -17,7 +17,7 @@ def add(num1, num2) : pass
 # 함수 결과 : 덧셈 계산 값 result
 # ------------------------------------------------------------------
 
-def add(*nums):
+def add(*nums): ## 가변인자 함수
     total = 0
     for n in nums:
         total += n

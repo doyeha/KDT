@@ -20,13 +20,13 @@ padd(1,8)
 
 
 
+# self
+# def inp_add():
+#     num1, num2 = map(int,input().split())
+#     result = num1+num2
+#     return print(result)
 
-def inp_add():
-    num1, num2 = map(int,input().split())
-    result = num1+num2
-    return print(result)
-
-inp_add()
+# inp_add()
 
 
 # 함수 사용하기 즉, 함수 호출
@@ -35,9 +35,9 @@ value = add(10,20)
 print(value)
 
 # 함수의 매게변수 개수와 다른 데이터 전달 X ERROR
-value = add(10,40,50)
-
-
+# value = add(10,40,50) # 많아서 에러
+value = add(10)         # 적어서 에러
+print(value)
 
 
 
