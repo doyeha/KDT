@@ -30,7 +30,10 @@ for site in site_list:
     Ent_temp = soup.find('h2').text # 삼성전자
     temp_list.append(Ent_temp)
     code_temp = soup.find('span', {'class' : 'code'}).text   # 회사 옆 코드
+<<<<<<< HEAD
     
+=======
+>>>>>>> c00fc4c842d785bc4d38956c8211a19483117576
     temp_list.append(code_temp)
     temp = soup.find('div', {'class':'rate_info'})
     temp = temp.find_all('span', {'class':'blind'})
