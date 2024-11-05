@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>서브페이지 만들기</title>
+        <link rel="icon" href="btn.png">
+        <style>
+            a{                
+                text-decoration: none;
+                color: black;
+            }
+            dt{
+                font-weight: 600;
+                font-size: 120%;
+            }
+            a:hover{
+                visibility: hidden;
+            }
+            a dd{ /* a 밑에 있는 dd에 적용 */
+                margin: 10px;
+            }
+            #table_sc {padding-left: 10px;}
+        </style>
+    </head>
+    <body>
+        <iframe src="head.html" width="100%" height="80" frameborder="0" scrolling="no"></iframe>
+        <h2 style="font-size: 40px; margin: 0; padding: 0; padding-left: 20px;">자연어처리</h2>
+        <iframe src="navi.html" width="100%" height="50" frameborder="0" scrolling="no"></iframe>
+        
+        <hr/>
+        <table border="1" style="width: 100%;">
+            <tr>
+                <td rowspan="8">
+                    <iframe src="/cgi-bin/NLP_Web.py" width="100%" height="600" title="Python CGI Output"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <th style="height: auto; width:10%;">주제</th>
+                <td id="table_sc" style="width:40%;">지식in 질문의 연관 병원 종류 이진분류</td>
+            </tr>
+            <tr>
+                <th style="height: auto; width:10%;">주제선정 이유</th>
+                <td id="table_sc" style="width:40%;">지식in이 GPT와 같은 AI가 없던 시절에는 접근성 및 대중성이 매우 좋다고 생각한다. 그간 쌓인 데이터도 많을 것이고, 질문을 하는 목적은 뚜렷하나 형식이 정해진 것이 없어 분류 모델을 만들면 좋을거라고 생각했다.</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">데이터셋</th>
+                <td id="table_sc" style="width:40%;">네이버 지식in에서 각자 라벨로 하는 병원을 키워드로 검색해 해당 키워드로 올라온 질문글을 크롤링<br>각자 10,000개의 질문을 크롤링했으며 다른 조원의 데이터 3,000개를 각각 받아와 10:9 비율을 맞추었음.</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">사용 모델</th>
+                <td id="table_sc" style="width:40%;">책 참조 (추후 수정 필요)</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">결과 (Score)</th>
+                <td id="table_sc" style="width:40%;">Score 사진 첨부 하면 좋을듯 </td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">아쉬운 점 및 추가 보완 가능한 점</th>
+                <td id="table_sc" style="width:40%;">지나친 책 의존. 책 없이 하라고 하면 못 할 것 같다. 추가 학습 필요</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">PPT 자료</th>
+                <td id="table_sc" style="width:40%;"><a href="https://docs.google.com/presentation/d/1aDPrlfpn3xCfgTS3o8llDEeZ311mptPk/edit#slide=id.p1">PPT 자료 링크</a></td>
+            </tr>
+
+
+        </table>
+        <hr/>
+        <iframe src="footer.html" width="100%" height="46" frameborder="0" scrolling="no"></iframe>
+    </body>
+</html>

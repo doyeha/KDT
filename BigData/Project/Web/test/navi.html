@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* html {height: 100vh;} */
+    body{
+        /* padding-top: 0px; */
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 31px;
+        /* height: 100vh; */
+        /* box-sizing: border-box; */
+    }
+    a li{
+        float: left;
+        height: 21px;
+        padding: 5px 20px;
+        background-color: lightskyblue;
+        font-weight: 600;   /*폰트 굵기 조절*/
+    }
+    ul{
+        list-style: none;
+        min-width: 1200px;
+    }
+
+    a:link{
+        text-decoration: none;
+        color: white;
+    }
+    a:visited{
+        text-decoration: none;
+        color: white;
+    }
+    a:active{
+        text-decoration: none;
+        color: darkgray;
+    }
+    li:hover{
+        background-color: orangered;
+    }
+
+    .bar{
+        height: 31px;
+        width: 100%;
+        background-color: lightskyblue;
+    }
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bar">
+    <ul>
+        <!-- _parent가 아니면 아이프레임 안에서 링크 이동이 일어난다. -->
+        <!-- main.html에서 실행을 하고 HTML을 클릭하면 -> subPage01.html로 이동 -->
+        <a href="Machine.html" target="_parent"><li>머신러닝</li></a>
+        <a href="Deep.html" target="_parent"><li>딥러닝</li></a>
+        <a href="OpenCV.html" target="_parent"><li>OpenCV</li></a>
+        <a href="NLP.html" target="_parent"><li>자연어</li></a>
+        <!-- <a href="#"><li>BOOT STRAP</li></a> -->
+    </ul>
+</div, initial-scale=1.0">
+</body>
+</html>

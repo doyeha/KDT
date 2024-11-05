@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>서브페이지 만들기</title>
+        <link rel="icon" href="btn.png">
+        <style>
+            a{                
+                text-decoration: none;
+                color: black;
+            }
+            dt{
+                font-weight: 600;
+                font-size: 120%;
+            }
+            a:hover{
+                visibility: hidden;
+            }
+            a dd{ /* a 밑에 있는 dd에 적용 */
+                margin: 10px;
+            }
+
+            #iframe_col_2nd {width: 200px; vertical-align : top;}
+            #table_sc {padding-left: 10px;}
+        </style>
+    </head>
+    <body>
+        <iframe src="head.html" width="100%" height="80" frameborder="0" scrolling="no"></iframe>
+        <h2 style="font-size: 40px; margin: 0; padding: 0; padding-left: 20px;">OpenCV</h2>
+        <iframe src="navi.html" width="100%" height="50" frameborder="0" scrolling="no"></iframe>
+        
+        <hr/> <!-- 구분선 -->
+        
+        <table border="1" style="width: 100%;"> <!--좌 모델 시연 // 우 모델 사용법-->
+            <tr>
+                <td rowspan="8">
+                    <iframe src="/cgi-bin/openCV_web.py" width="100%" height="600" title="Python CGI Output"></iframe>
+                </td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">주제</th>
+                <td id="table_sc" style="width:40%;">이모티콘 분류 모델</td>
+            </tr>
+            <tr>
+                <th style="height: auto; width:10%;">주제선정 이유</th>
+                <td id="table_sc" style="width:40%;">귀여워서! 였는데. <br> 이력서 제출용이면 그럴싸한 이유가 필요합니다. <br> 추천 좀...plz</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">데이터셋</th>
+                <td id="table_sc" style="width:40%;">카톡으로 직접 움직이는 이모티콘 녹화 및 프레임 단위의 img파일 생성</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">사용 모델</th>
+                <td id="table_sc" style="width:40%;">책 참조 (추후 수정 필요)</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">결과 : Score</th>
+                <td id="table_sc" style="width:40%;">Score 사진 첨부 하면 좋을듯 </td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">아쉬운 점 및 추가 보완 가능한 점</th>
+                <td id="table_sc" style="width:40%;">비슷한 유형으로 했어도 이런 score 및 분류가 가능했을까? 하는 의문이 있다.</td>
+            </tr>
+
+            <tr>
+                <th style="height: auto; width:10%;">PPT 자료</th>
+                <td id="table_sc" style="width:40%;"><a href="https://docs.google.com/presentation/d/1aDPrlfpn3xCfgTS3o8llDEeZ311mptPk/edit#slide=id.p1">PPT 자료 링크</a></td>
+            </tr>
+
+            <!-- <tr>
+                <td>
+                    <p><a href="https://docs.google.com/presentation/d/1aDPrlfpn3xCfgTS3o8llDEeZ311mptPk/edit#slide=id.p1">PPT 자료 링크</a></p>
+                </td>
+            </tr> -->
+
+            <!-- <tr  >
+                <td id="iframe_col_2nd">line1</td>
+            </tr>
+            <tr >
+                <td d="iframe_col_2nd"> line1</td>
+            </tr>
+            <tr >
+                <td id="iframe_col_2nd">line1</td>
+            </tr> -->
+
+
+        </table>
+        <hr/> <!-- 구분선 -->
+
+
+        
+        <iframe src="footer.html" width="100%" height="46" frameborder="0" scrolling="no"></iframe>
+    </body>
+</html>

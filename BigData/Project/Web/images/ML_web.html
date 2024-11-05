@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {height: 20px}
+    </style>
+</head>
+<body>
+    <h1>비디오게임 배급사 찾기</h1>
+    <h4>당신이 좋아하는 게임의 배급사를 찾아봅시다. 아래 칸에 정보를 입력해주세요.</h4>
+    <form method="POST" action="/cgi-bin/ML_Web.py">
+        <table>
+            <tr>
+                <th>NA_Sales</th>
+                <td><textarea name="NA_Sales" placeholder="달러 기준 금액 ex)10.1"></textarea></td>
+            </tr>
+            
+            <tr>
+                <th>EU_Sales</th>
+                <td><textarea name="EU_Sales" placeholder="달러 기준 금액 ex)60.1"></textarea></td>
+            </tr>
+
+            <tr>
+                <th>JP_Sales</th>
+                <td><textarea name="JP_Sales" placeholder="달러 기준 금액 ex)20"></textarea></td>
+            </tr>
+
+            <tr style="height: 20px;">
+                <th>Global_Sales</th>
+                <td><text name="Global_Sales">{{Global_Sales}}</text></td>
+            </tr>
+            
+            <tr style="height: 30px;">
+                <th>Genre</th>
+                <td> <select name="Genre" size="1">   <!--size는 기본적으로 뜨는 옵션 갯수, disabled은 사용 못하게 잠궈버리는 것.-->
+                    <option value="0">Sports</option>
+                    <option value="1">Platform</option>
+                    <option value="2">Racing</option>
+                    <option value="3">Role-Playing</option>
+                    <option value="4" selected="True">Puzzle</option>
+                    <option value="5">Misc</option>
+                    <option value="6">Shooter</option>
+                    <option value="7">Simulation</option>
+                    <option value="8">Action</option>
+                    <option value="9">Fighting</option>
+                    <option value="10">Adventure</option>
+                    <option value="11">Strategy</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Publisher</th>
+                <td><textarea name="Publisher" placeholder="1~110까지의 숫자"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+    <p>예측 : {{pred}}</p>
+</body>
+</html>
+
+<!-- 장르 총 12개 
+ 배급사 110개 
+ 
+ 장르는 고르게 하고 배급사는 1~110 해서 입력하라고 한 다음 그걸 
+ 장르에 맞게 False 하다가 하나에만 True로 바꾸고
+ 배급사도 마찬가지로 쳐 . ㅇㅋ 끝 
+ ㅠㅓㅣ
+ -->

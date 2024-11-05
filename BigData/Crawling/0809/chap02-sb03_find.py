@@ -79,3 +79,7 @@ print('span tag', span_tag)
 print('attrs :', span_tag.attrs)
 print('value :', span_tag.attrs['class'])
 print('text :', span_tag.text)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 43d7979f5e5d243af9d17724ab11cbe06437d597

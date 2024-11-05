@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>---AI 모델 이미지 예측---</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 화면 전체 높이를 차지 */
+            margin: 0; /* 기본 margin 제거 */
+            background-color: #b3e0ff; /* 연하늘색 배경 */
+        }
+        .container {
+            text-align: center; /* 텍스트 중앙 정렬 */
+            padding: 20px;
+            background-color: white; /* 흰색 배경 */
+            border-radius: 8px; /* 둥근 모서리 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        }
+        #preview {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc; /* 미리보기 이미지 테두리 */
+            border-radius: 4px; /* 이미지 둥근 모서리 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form enctype="multipart/form-data" method="post">
+            <p>이미지 업로드: <input type="file" id="imageInput" name="image" accept="image/*" /></p>
+            <img id="preview" alt="이미지 미리보기">
+            <p><input type="submit" value="이제는 진짜 가능"></p>
+            <p>{msg}</p>
+        </form>
+    </div>
+
+    <script>
+        // 이미지 미리보기 기능
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                document.getElementById('preview').src = e.target.result;
+            };
+
+            if (file) {
+                reader.readAsDataURL(file);  // 이미지를 읽어서 미리보기로 표시
+            }
+        });
+    </script>
+</body>
+</html>

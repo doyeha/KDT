@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <title>---AI 모델 이미지 예측---</title>
+      <style>
+        .container {{
+            margin-top: 20px;
+        }}
+        #preview {{
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }}
+      </style>
+     </head>
+     <body>
+      <div class="container">
+        <form enctype="multipart/form-data" method="post">
+          
+          <p>이미지 업로드: <input type="file" id="imageInput" name="image" accept="image/*" /></p>
+          <img id="preview" alt="이미지 미리보기">
+          <p><input type="submit" value="예측"></p>
+          <p>{msg}</p>
+        </form>
+      </div>
+
+      <script>
+        // 이미지 미리보기 기능
+        document.getElementById('imageInput').addEventListener('change', function(event) {{
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {{
+                document.getElementById('preview').src = e.target.result;
+            }};
+
+            if (file) {{
+                reader.readAsDataURL(file);  // 이미지를 읽어서 미리보기로 표시
+            }}
+        }});
+      </script>
+     </body>
+    </html>
