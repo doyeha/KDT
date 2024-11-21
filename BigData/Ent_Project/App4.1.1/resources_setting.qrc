@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="alarm">
+    <file>img/파일_50.png</file>
+    <file>img/알람설정_50.png</file>
+    <file>img/알림설정.png</file>
+  </qresource>
+  <qresource prefix="rag">
+    <file>img/초기화_35.png</file>
+    <file>img/초기화_24.png</file>
+    <file>img/그리기_35.png</file>
+    <file>img/구역지정_50.png</file>
+  </qresource>
+  <qresource prefix="file">
+    <file>img/현재_35.png</file>
+    <file>img/open-folder.png</file>
+    <file>img/저장위치.png</file>
+    <file>img/현재.png</file>
+  </qresource>
+  <qresource prefix="bump">
+    <file>img/충돌.png</file>
+  </qresource>
+  <qresource prefix="area">
+    <file>img/위험구역_40.png</file>
+    <file>img/위험구역_35.png</file>
+    <file>img/위험구역.png</file>
+  </qresource>
+  <qresource prefix="hat">
+    <file>img/안전모 유무.png</file>
+  </qresource>
+</RCC>

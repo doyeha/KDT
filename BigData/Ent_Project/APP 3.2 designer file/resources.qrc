@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="log">
+    <file>로그.png</file>
+  </qresource>
+  <qresource prefix="로고">
+    <file>엠엔비전.png</file>
+  </qresource>
+  <qresource prefix="영상">
+    <file>영상.png</file>
+  </qresource>
+  <qresource prefix="정보">
+    <file>영상 정보.png</file>
+  </qresource>
+  <qresource prefix="설정">
+    <file>랙 영역 설정.png</file>
+    <file>설정.png</file>
+  </qresource>
+  <qresource prefix="저장">
+    <file>영상 저장하기.png</file>
+  </qresource>
+</RCC>

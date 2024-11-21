@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/fast-forward (1).png</file>
+    <file>img/rewind (1).png</file>
+    <file>img/upload (1).png</file>
+    <file>img/로그.png</file>
+    <file>img/설정.png</file>
+    <file>img/엠엔비전.png</file>
+    <file>img/영상 저장하기.png</file>
+    <file>img/영상 정보.png</file>
+  </qresource>
+</RCC>
