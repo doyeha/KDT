@@ -379,7 +379,7 @@ while game_money >= 500:
         print(f"종종 초기 금액의 10배를 가져가시는 분이 계시죠. 그런 승리자가 되어보시겠습니까? : {game_money}", end=" ")
         new_game_question = input() # 플레이어 승리 후 연승 게임 도전 선택지
         if new_game_question in ["y", "Y"]:
-            print("\n\n\n")         # 화면 정리용
+            print("\n\n\n")         # 화면 정리용\
             continue
         else:
             print("즐거웠습니다. 다음에 또 뵐 수 있으면 좋겠군요.")
