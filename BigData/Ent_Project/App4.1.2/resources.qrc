@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/로그확인_30.png</file>
+    <file>img/fast-forward (1).png</file>
+    <file>img/open-folder.png</file>
+    <file>img/rewind (1).png</file>
+    <file>img/upload (1).png</file>
+    <file>img/검색_24.png</file>
+    <file>img/구역지정_50.png</file>
+    <file>img/그리기_35.png</file>
+    <file>img/랙 영역 설정.png</file>
+    <file>img/로그.png</file>
+    <file>img/설정.png</file>
+    <file>img/안전모 유무.png</file>
+    <file>img/알람설정_50.png</file>
+    <file>img/알림설정.png</file>
+    <file>img/엠엔비전.png</file>
+    <file>img/영상 저장하기.png</file>
+    <file>img/영상 정보.png</file>
+    <file>img/영상.png</file>
+    <file>img/위험구역.png</file>
+    <file>img/위험구역_35.png</file>
+    <file>img/위험구역_40.png</file>
+    <file>img/저장위치.png</file>
+    <file>img/초기화_24.png</file>
+    <file>img/초기화_35.png</file>
+    <file>img/충돌.png</file>
+    <file>img/파일_50.png</file>
+    <file>img/현재.png</file>
+    <file>img/현재_35.png</file>
+  </qresource>
+</RCC>

@@ -28,7 +28,7 @@ card_deck = {
 11 : 03.3% (1개)
 """
 
-def check_card(card): # 카드 뽑았는지 확인.
+def check_card(card): # 카드 뽑았는지 확인
     if card not in dealer_card and card not in player_card: # 현재 카드 자체가 1개의 딕셔너리 쌍이니까. 그대로 넣는다.
         return True
     else:
@@ -116,14 +116,12 @@ def show_card(deal):         # 카드 딜러:  당신 : 카드 형으로 출력 
                     dealer_sum.append(i)   # 딜러들 값으로 이루어진 리스트 
                     
 
-
        for show in range(0,len(dealer_card)-1): #추가 연출
             sh = len(dealer_card)-2
             if show == sh: print("\n\n\n\n")  # 화면 정리용
-
             print("            ┌────┐ ┌────┐ ", end="")
             print("┌────┐ "*show)
-                #둘 ㅉ재ㅜㄹ
+                #둘째줄
             print(f"딜러 {sum(dealer_sum[:2+show]):^2}점 :", end=" ")    
             print(line2[:13+7*show])  # 7씩 증가
             print("            └────┘ └────┘ ", end="")
@@ -137,7 +135,6 @@ def show_card(deal):         # 카드 딜러:  당신 : 카드 형으로 출력 
                 time.sleep(0.5)
             else:
                 time.sleep(1.5)
-
 
 
     else:   # 안보이는 상황
@@ -156,6 +153,7 @@ def show_card(deal):         # 카드 딜러:  당신 : 카드 형으로 출력 
             else: print(f" └────┘", end=" ")
         print()
         
+
 
 
     ## 플레이어 - - - - - - - - - - - - - - - - - - - - - - - - - -        
@@ -201,9 +199,6 @@ def over_check():  #  버스트 확인 및 상태에 따라 다른 값 return
     else:
         return 0
     
-    # if deal_sum(dealer_card) < 21 and play_sum(player_card) < 21:
-    #     return 0
-
 
 game_money = 1000   # 초기 게임자금
 game_cost = 500     # 게임 참여금
@@ -229,7 +224,6 @@ while game_money >= 500:
     elif lose > 0: 
         print(f" 이전 게임이 잘 풀리지 않으셨나보군요. 현재 게임 머니 {game_money}를 소유중이십니다.\n정말 다시 도전하십니까?")
         dobak = True    # line226 사용.
-
 
     ## [게임 시작 Yes or No And 설명 듣기 선택]
     get_input = input()
@@ -366,9 +360,6 @@ while game_money >= 500:
 
                 
 
-
-                
-
     if regame == False: # 카드 받다가 게임 종료 후 1차 while까지 종료 시키는 용
         break
     
@@ -414,34 +405,15 @@ while game_money >= 500:
 
     
     
-
-
-
-            
-
-
-
-
-
-    
-
-
-
 """
         ┌───┐
 딜러 :   │   │
         └───┘
-"""
 
-
-"""
 딕셔너리변수[키값] : 해당 키 값에 해당하는 value값 조회
 (에러O)딕셔너리변수.get(키값) : 해당 키 값에 해당하는 value값 조회
 (에러X)딕셔너리변수[키값] = vlaue값 : 변수 내 키+value값 추가
 출처: https://secuinfo.tistory.com/entry/Python-basic-주요-딕셔너리-메소드 [Song's Lab:티스토리]
 """
-
-
-
 
 # 요소 추가 insert(인덱스, 데이터) // append(데이터)

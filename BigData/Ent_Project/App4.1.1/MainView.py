@@ -45,9 +45,7 @@ class MainView(QMainWindow, form_class):
         print("프로그램 시작")
         # 영상 띄우기
         self.video_frame = self.findChild(QtWidgets.QLabel, "video_frame")
-        self.video_frame.setStyleSheet(
-            "background-color: black;"
-        )  # 영상 없음 검은 호ㅜㅏ면 해
+        self.video_frame.setStyleSheet("background-color: black;")  # 영상 없음 검은 호ㅜㅏ면 해
         # self.video_thread(video_file)
         # self.video_thread.info_signal.connect(self.update_frame)  # fps 랑 length 보내온거 받기.
         self.video_thread = None

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/확인_30.png</file>
+    <file>img/구역지정_50.png</file>
+    <file>img/옵션_24.png</file>
+    <file>img/초기화_24.png</file>
+    <file>img/현재_35.png</file>
+  </qresource>
+</RCC>
