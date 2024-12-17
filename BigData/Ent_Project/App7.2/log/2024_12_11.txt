@@ -1,0 +1,12 @@
+지게차_사람_군집.mp4 0 case_car 2024_12_11 video_path
+지게차_사람_군집.mp4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_rack 2024_12_11 video_path
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_rack 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_rack 2024_12_11 test_1211_103807.mp4
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_rack 2024_12_11 test_1211_104033.mp4
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 no_video
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 no_video
+Detect_test_Cam5.MP4 2 case_rack 2024_12_11 test_1211_1056.mp4
+Detect_test_Cam5.MP4 2 case_rack 2024_12_11 test_1211_1056.mp4

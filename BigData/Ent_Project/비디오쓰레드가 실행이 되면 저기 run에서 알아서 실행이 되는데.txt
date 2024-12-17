@@ -1,0 +1,37 @@
+비디오쓰레드가 실행이 되면 저기 run에서 알아서 실행이 되는데, 이게 여기서 
+cv 처리를 해서 영상을 띄우는 작업이란 말이요.
+근데 이걸 QLabel에 지정해서 쏘고 있는 형식인데. 
+self.video_frame = self.findChild(QtWidgets.QLabel, "video_frame") 여따가 보내고 있어. 
+그럼 이 self.video_frame에 쏘라고 ThreadOfVideo(signal, 비디오 파일명, self.video_frame) 이렇게 주는거지.
+
+
+MainView의 update_frame 메서드를 통해 이 video_frame에 setPixmap을 통해 QLabel로 띄우는 거고 . 
+pixmap_signal(Qpixmap)을 통해서 이미지 프레임을 update_frame 메서드를 실행해서 띄우고. 
+
+오케이 렛츠 기릿
+
+
+
+그럼 드로잉쓰레드에서는
+MainView에서 Go_drawing하면 .show()하고,
+
+지금 Drawing이랑 Paint_View랑 연결되어있는거 아닌가?
+Drawing에서 QLabel:drawingArea로 지정이 되어있는 PainView 소환, 그려진 사각형의 좌표값을 받아오고 있음.
+
+
+쓰레드 내에서는 처음에 init에서 받은 값으로 다 처리해. 반환을 다 signal로 하고.
+메인에서 이렇게 하고 있으면 저기서 쓰레드를 생성하고 만드는 거지. 
+        self.drawing_view = Drawing(self.signal, self.video_file)
+        self.drawing_thread = ThreadOfDrawing(self.video_file)
+        self.drawing_thread.start()
+        self.drawing_view.show()
+
+
+
+새영상 로드하면 기존 랙 영역 삭제
+TextLabel 뜨는거 삭제
+
+
+length는 int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) 	# 총 프레임 길이
+fps = cap.get(cv2.CAP_PROP_FPS)	# 초당 프레임 수 
+self.current_time = cap.get(cv2.CAP_PROP_POS_MSEC) * 0.001	# 밀리초 단위의 현재 위치 

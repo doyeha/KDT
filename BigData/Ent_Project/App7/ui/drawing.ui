@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>drawing</class>
+ <widget class="QDialog" name="drawing">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2516</width>
+    <height>1600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>2516</width>
+    <height>1600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2516</width>
+    <height>1600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>setting</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(242, 242, 242, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>C:KDTvideo</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/img/img/현재_35.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AcceptButton">
+   <property name="geometry">
+    <rect>
+     <x>2180</x>
+     <y>200</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: #ffffff;
+selection-color: #ffffff;
+color: #ffffff;
+
+border: 1px solid  #000000;
+border-radius: 7px;
+padding-right: 5px; 
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+QPushButton:hover
+{
+	background-color: #F28B30;
+	border: 1px solid  #000000;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/img/확인_30.png</normaloff>:/img/img/확인_30.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>281</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/img/img/구역지정_50.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtn_rec1">
+   <property name="geometry">
+    <rect>
+     <x>2180</x>
+     <y>270</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>🛺 ❌🚶❌</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtn_rec2">
+   <property name="geometry">
+    <rect>
+     <x>2180</x>
+     <y>380</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>🛺 ❌🚶⭕</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtn_rec3">
+   <property name="geometry">
+    <rect>
+     <x>2180</x>
+     <y>490</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>🛺 ⭕🚶❌</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>2180</x>
+     <y>140</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/img/img/그리기옵션_45.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rect1_info">
+   <property name="geometry">
+    <rect>
+     <x>2170</x>
+     <y>320</y>
+     <width>300</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>ex) rec 영역 크기 (47, 66, 279, 97)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="drawingArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>2121</width>
+     <height>1201</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>2050</width>
+     <height>1150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>2121</width>
+     <height>1201</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid lightgray;
+background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rect2_info">
+   <property name="geometry">
+    <rect>
+     <x>2170</x>
+     <y>430</y>
+     <width>300</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>ex) rec 영역 크기 (47, 66, 279, 97)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rect3_info">
+   <property name="geometry">
+    <rect>
+     <x>2170</x>
+     <y>540</y>
+     <width>300</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>ex) rec 영역 크기 (47, 66, 279, 97)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="previewArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>2121</width>
+     <height>1201</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>2050</width>
+     <height>1150</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid lightgray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_6</zorder>
+  <zorder>label_5</zorder>
+  <zorder>AcceptButton</zorder>
+  <zorder>label</zorder>
+  <zorder>radioBtn_rec1</zorder>
+  <zorder>radioBtn_rec2</zorder>
+  <zorder>radioBtn_rec3</zorder>
+  <zorder>label_3</zorder>
+  <zorder>drawingArea</zorder>
+  <zorder>rect3_info</zorder>
+  <zorder>rect1_info</zorder>
+  <zorder>rect2_info</zorder>
+  <zorder>previewArea</zorder>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>AcceptButton</sender>
+   <signal>clicked()</signal>
+   <receiver>drawing</receiver>
+   <slot>recxy_send()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2232</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2347</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>mousePressEvent()</slot>
+  <slot>mouseMoveEvent()</slot>
+  <slot>mouseReleaseEvent()</slot>
+  <slot>paintEvent()</slot>
+  <slot>clear()</slot>
+  <slot>recxy_send()</slot>
+ </slots>
+</ui>

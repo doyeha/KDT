@@ -1,0 +1,6 @@
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_reck 2024_12_11 video_path
+Detect_test_Cam5.MP4 0 case_helmet 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_reck 2024_12_11 video_path
+Detect_test_Cam5.MP4 1 case_reck 2024_12_11 video_path

@@ -1,0 +1,27 @@
+상단탭 - 선택 탭 색깔 변화 (class = selected & selected_font)
+메인 사진 높이 맞추기 (class = main_image)
+
+
+
+
+주말 일 시 
+
+모델 돌리는 탭 추가
+About = PPT 대용 설명란 추가
+
+
+주제 설정 : 
+데이터셋 : yahoo finance가 제공하는 API 
+
+어떤 모델을 사용했는가 : 
+flask - DB 돌아가는 구조 : 
+데이터 엔티티
+
+
+문제?점 : 주식 휴장일.
+
+
+
+&nbsp; 작게 띄워쓰기
+            &ensp; 보통
+            &emsp;크게 -->
